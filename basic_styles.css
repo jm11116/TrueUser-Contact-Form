@@ -1,0 +1,25 @@
+body {
+    background-color: rgb(249, 249, 249);
+}
+input, label, textarea {
+    display: block;
+    margin: auto;
+    padding: 10px;
+    min-width: 75%;
+    max-width: 50%;
+    text-align: center;
+}
+input {
+    margin-bottom: 20px;
+}
+#contact_submit {
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    padding: 10px;
+    max-width: 60%;
+    min-width: 50%;
+}
+.error {
+    text-align: center;
+}
