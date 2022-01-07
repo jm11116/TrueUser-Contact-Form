@@ -1,6 +1,12 @@
 body {
     background-color: rgb(249, 249, 249);
 }
+a {
+    display: block;
+    margin: auto;
+    text-align: center;
+    margin-top: 200px;
+}
 input, label, textarea {
     display: block;
     margin: auto;

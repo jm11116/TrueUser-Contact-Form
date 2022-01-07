@@ -1,0 +1,27 @@
+To: template@template.com
+Subject: New message from website.com
+Message: Name: Test
+Email: frank.micallef51@gmail.com
+message: Test
+
+User information: 
+IP address: ::1
+IP info: http://www.scamalytics.com/ip/::1
+Time from visitor's system clock: Fri Jan 07 2022 12:38:45 GMT+0900 (Korean Standard Time)
+JavaScript tracking scripts: Enabled
+Mouse moved: true
+Pixels scrolled: 1
+Keys pressed: Test
+Visitor active time: 0.64 minutes
+Visitor's screen size: 1280px wide, 800px long
+Visitor's PC core count: 8
+User's screen color depth: 30
+User's screen pixel depth: 30
+Cookie value: P%#gk@vBl8159CncO*ib!pUz#N9@y791!2TNb1N#48xKhzvOms*v!1!
+Verification attempts from IP today: 6
+User agent string: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.58 Mobile Safari/537.36
+Headers: From: "New message from website.com" <mailer@template@template.com>
+Reply-To: "Test" <frank.micallef51@gmail.com>
+X-Mailer: PHP/7.3.11
+MIME-Version: 1.0
+Content-type: text/html; charset=iso-8859-1

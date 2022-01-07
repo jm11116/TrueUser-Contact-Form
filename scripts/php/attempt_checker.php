@@ -1,12 +1,9 @@
 <?php
 
-require_once dirname(__DIR__, 1) . "/php/script_access_checker.php";
-require_once dirname(__DIR__, 1) . "/php/file_encrypter.php";
-
 class AttemptChecker { //Need to encrypt IP logs
     public function __construct(){
-        $this->log_folder = "ip_logs/";
-        $this->settings_loc = $GLOBALS["form_settings_path"];
+        $this->log_folder = dirname(__DIR__, 2) . "/ip_logs/";
+        $this->settings_loc = dirname(__DIR__, 2) . "/settings.xml";
         $this->settings = /*FileEncrypter::decrypt(*/file_get_contents($this->settings_loc)/*)*/;
         $this->settings = simplexml_load_string($this->settings);
     }

@@ -1,16 +1,14 @@
 class Verifier {
     constructor(){
         $.ajaxSetup({cache: false});
-        this.form_id = "#contact_form"; //With CSS selector prepended
         this.verify_start = false;
-        this.website = "www.website.com";
-        this.bindSubmit(this.form_id);
+        this.bindSubmit(settings.form_id);
         this.timeout = false;
     }
-    bindSubmit(form_id){ //Make it so that the banned IP thing happens AFTER form submission, faking fullscreen permission with the button click!! Echo differences!
+    bindSubmit(form_id){
         $(form_id).submit((e) => {
             e.preventDefault();
-            $(verifier.form_id).find("*").each(function(){
+            $(settings.form_id).find("*").each(function(){
                 $(this).removeAttr("disabled"); //Fields temp enabled to allow serialize() to work
             });
             this.startVerify(form_id);
@@ -18,7 +16,7 @@ class Verifier {
     }
     getErrors(){ //Might as well validate client-side since form doesn't even work with JS.
         var errors = [];
-        field_names.forEach(function(elem_name, i){
+        settings.field_names.forEach(function(elem_name, i){
             if ($("[name='" + elem_name + "']").val() == undefined || $("[name='" + elem_name + "']").val() == ""){
                 var error = "ERROR: " + field_labels[i] + " field cannot be empty.";
                 errors.push(error);
@@ -29,15 +27,15 @@ class Verifier {
     }
     startVerify(form_id){
         $.ajax({
-            url: "contact_form/verify.php",
+            url: "scripts/php/verify.php",
             cache: false,
             context: this,
             method: "POST",
             data: {
                 request: "get_code",
-                form_data: $(verifier.form_id).serialize(),
-                field_names: field_names,
-                labels: field_labels,
+                form_data: $(settings.form_id).serialize(),
+                field_names: settings.field_names,
+                labels: settings.field_labels,
                 email: $("[name='email']").val(),
                 website: "website.com"
             },
@@ -47,7 +45,7 @@ class Verifier {
             success: function(data){
                 alert(data);
                 if (data.includes("Please check your inbox.")){
-                    $.get("contact_form/verification_input.html", function(html){
+                    $.get("scripts/html/verification_input.html", function(html){
                         $(form_id).find("*").each(function(){
                             $(this).prop("disabled", "true");
                         });

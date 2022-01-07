@@ -1,23 +1,18 @@
-<div class="container">
-<div class="col-md-12 mb-3">
 <h3 id="verify" style="margin-top:50px;">Enter verification code</h3>
 <p>A verification code has been sent to your email address. Please check your inbox and enter the code in the email to send your enquiry:</p>
 
 <form id="verify_form" action="" method="POST">
-<div class="col-md-13 mb-3">
-    <input type="text" id="verification_code" name="verification_code" class="form-control" placeholder="Enter code here..." autocomplete="off">
+    <input type="text" id="verification_code" name="verification_code" placeholder="Enter code here..." autocomplete="off">
     </input>
 </div>
     <center>
-    <div class="btn-group">
-    <input id="verify_submit" class="form-control btn btn-lg" type="submit">
-    <button id="resend_code" class="form-control btn btn-lg">Resend Code</button>
-    <button id="cancel" class="form-control btn btn-lg">Cancel</button>
-    </div>
+    <input id="verify_submit" type="submit">
+    <button id="resend_code">Resend Code</button>
+    <button id="cancel">Cancel</button>
     </center>
 </form>
 </div>
 
-<script src="contact_form/verification_form.js"></script>
+<script src="scripts/js/verification_form.js"></script>
 </div>
 </div>

@@ -8,9 +8,13 @@
         <p class="error">Please enable JavaScript in your browser to make an equiry.</p>
         <!--JS error message will be replaced by JavaScript with the real form data-->
     </form>
+    <div id="verification_container"></div>
 </body>
+<footer>
+    <!--<a href="hall_of_shame.php" target="_blank">View the Hall of Shame</a>-->
+    <script src="scripts/js/settings.js"></script>
     <script src="scripts/js/identifier.js"></script>
     <script src="scripts/js/security.js"></script>
     <script src="scripts/js/verifier.js"></script>
+</footer>
 </html>
-<!--Hall of Shame-->

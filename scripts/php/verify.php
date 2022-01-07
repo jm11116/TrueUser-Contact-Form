@@ -1,15 +1,11 @@
 <?php
 
-require_once dirname(__DIR__, 1) . "/php/script_access_checker.php";
-require_once dirname(__DIR__, 1) . "/php/file_encrypter.php";
-
 session_start();
 
 if ($_SERVER["REQUEST_METHOD"] === "POST"){ //Use a key here
 
 require "mailer.php";
 require "tester.php";
-//require "country_checker.php";
 require "user_checker.php";
 require "attempt_checker.php";
 
@@ -17,8 +13,7 @@ class Verifier {
     public function __construct(){
         session_start();
         $_SESSION["form_data"];
-        $this->json = json_decode(file_get_contents($GLOBALS["form_json_path"]), true);
-        $this->settings_loc = $GLOBALS["form_settings_path"];
+        $this->settings_loc = dirname(__DIR__, 2) . "/settings.xml";
         $this->settings = /*FileEncrypter::decrypt(*/file_get_contents($this->settings_loc)/*)*/;
         $this->settings = simplexml_load_string($this->settings);
         $this->to_email = htmlspecialchars($this->settings->to_email);
@@ -57,6 +52,7 @@ class Verifier {
         return $message;
     }
     private function genOrReplaceOldCode(){
+        $_SESSION["user_email"] = $_POST["email"];
         $to = htmlspecialchars(strtolower($_SESSION["user_email"]));
         if (!$GLOBALS["attempt_checker"]->checkIfTooManyTotalVerificationCodes($to)){
             if (!$GLOBALS["user_checker"]->tooSoonSinceLastAttempt() && $_SESSION["attempts"] >= $this->settings->attempts_until_timeout){

@@ -1,7 +1,7 @@
 $("#verify_form").submit((e) => {
     e.preventDefault();
     $.ajax({
-        url: "contact_form/verify.php",
+        url: "scripts/php/verify.php",
         cache: false,
         context: this,
         method: "POST",
@@ -28,12 +28,13 @@ $("#verify_form").submit((e) => {
 $("#resend_code").click((e) => {
     e.preventDefault();
     $.ajax({
-        url: "contact_form/verify.php",
+        url: "scripts/php/verify.php",
         cache: false,
         context: this,
         method: "POST",
         data: {
             request: "resend",
+            email: $("[name='email']").val(),
             website: "website.com"
             },
         error: function(){
