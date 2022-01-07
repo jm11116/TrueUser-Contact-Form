@@ -1,5 +1,7 @@
 <?php
 
+require_once "file_encrypter.php";
+
 class Tester {
     static function getTestCode($to, $subject, $message, $from){ //Protect this
         $test_data = "To: " . $to . "\n" .

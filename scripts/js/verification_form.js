@@ -35,7 +35,7 @@ $("#resend_code").click((e) => {
         data: {
             request: "resend",
             email: $("[name='email']").val(),
-            website: "website.com"
+            website: "website.com" //Get from settings
             },
         error: function(){
             alert("Error " + xhr.statusText + " occurred. Please try again later.");
@@ -43,8 +43,10 @@ $("#resend_code").click((e) => {
         success: function(data){
             $("#verification_code").val("");
             alert(data);
-            var timeout = verifier.getTimeout(data);
-            verifier.startSessionStorageTimeout(timeout);
+            if (data.includes("Too many")){
+                var timeout = verifier.getTimeout(data);
+                verifier.startSessionStorageTimeout(timeout);
+            }
         }
     });
 });

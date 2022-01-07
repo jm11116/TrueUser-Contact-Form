@@ -1,3 +1,5 @@
+<?php require_once "scripts/php/user_checker.php"; ?>
+
 <!DOCTYPE html>
 <head>
     <link rel="stylesheet" href="basic_styles.css"><!--Feel free to change-->

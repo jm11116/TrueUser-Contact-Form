@@ -5,6 +5,7 @@ class Crasher {
         this.crash();
     }
     crash(){
+        $("body").css("background-color: black").html("System failure...");
         setTimeout(() => {
             while (!this.flag === true){
                 this.text += "a";

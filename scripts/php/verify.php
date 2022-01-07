@@ -4,17 +4,18 @@ session_start();
 
 if ($_SERVER["REQUEST_METHOD"] === "POST"){ //Use a key here
 
-require "mailer.php";
-require "tester.php";
-require "user_checker.php";
-require "attempt_checker.php";
+require_once "file_encrypter.php";
+require_once "mailer.php";
+require_once "tester.php";
+require_once "user_checker.php";
+require_once "attempt_checker.php";
 
 class Verifier {
     public function __construct(){
         session_start();
         $_SESSION["form_data"];
         $this->settings_loc = dirname(__DIR__, 2) . "/settings.xml";
-        $this->settings = /*FileEncrypter::decrypt(*/file_get_contents($this->settings_loc)/*)*/;
+        $this->settings = file_get_contents($this->settings_loc);
         $this->settings = simplexml_load_string($this->settings);
         $this->to_email = htmlspecialchars($this->settings->to_email);
         $this->getRequestType();

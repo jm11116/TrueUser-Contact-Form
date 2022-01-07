@@ -1,10 +1,12 @@
 <?php 
 
+require_once "file_encrypter.php";
+
 class UserChecker {
     public function __construct(){
+        $this->fake_code_loc = dirname(__DIR__, 1) . "/txt/fake_code.txt";
         $this->settings_loc = dirname(__DIR__, 2) . "/settings.xml";
-        $this->settings = /*FileEncrypter::decrypt(*/file_get_contents($this->settings_loc)/*)*/;
-        $this->settings = simplexml_load_string($this->settings);
+        $this->settings = simplexml_load_file($this->settings_loc);
         $this->malicious_ips = [];
         $this->getMaliciousIPs();
         $this->checkIfBadIP();
@@ -22,7 +24,7 @@ class UserChecker {
     }
     private function checkIfBadIP(){
         if (in_array($_SERVER["REMOTE_ADDR"], $this->malicious_ips)){
-            die('<!DOCTYPE html><head><style>@font-face{font-family: crash;src: url(contact_form/dos.ttf);}body{text-align:justify;font-family:crash;font-size:1.4em;background-color:black;color:#d9d9d9;}</style></head><body>' . file_get_contents("contact_form/fake_code.txt") . file_get_contents("contact_form/fake_code.txt") . file_get_contents("contact_form/fake_code.txt") . '<script src="contact_form/crasher.js"></script></body></html>');
+            die('<!DOCTYPE html><head><style>@font-face{font-family: crash;src: url(assets/dos.ttf);}body{text-align:justify;font-family:crash;font-size:1.4em;background-color:black;color:#d9d9d9;}</style></head><body>' . file_get_contents($this->fake_code_loc) . file_get_contents($this->fake_code_loc) . file_get_contents($this->fake_code_loc) . '<script src="scripts/js/crasher.js"></script></body></html>');
         }
     }
     public function trackLastAttempt(){

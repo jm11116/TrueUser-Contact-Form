@@ -7,11 +7,10 @@
     <field_labels>Name, Email, message</field_labels>
     <tracker_test>true</tracker_test>
     <bad_ips></bad_ips>
-    <ips_to_crash></ips_to_crash>
     <max_mails_per_day>3</max_mails_per_day>
-    <max_codes_per_day>7</max_codes_per_day>
+    <max_codes_per_day>4</max_codes_per_day>
     <attempts_until_timeout>10</attempts_until_timeout>
-    <code_timeout_secs>5</code_timeout_secs>
+    <code_timeout_secs>4</code_timeout_secs>
     <code_expiry_mins>5</code_expiry_mins>
-    <form_reset_time_hours>6</form_reset_time_hours>
+    <form_reset_time_hours>4</form_reset_time_hours>
   </settings>

@@ -1,5 +1,5 @@
-To: frank.micallef51@gmail.com
+To: test@test.com
 Subject: Your verification code from website.com
-Message: Your verification code is: 88869 and was sent from IP address: ::1
+Message: Your verification code is: 46329 and was sent from IP address: ::1
 Get IP information here: http://www.scamalytics.com/ip/::1
 From: From: alerts@

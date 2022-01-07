@@ -1,5 +1,7 @@
 <?php
 
+require_once "file_encrypter.php";
+
 class AttemptChecker { //Need to encrypt IP logs
     public function __construct(){
         $this->log_folder = dirname(__DIR__, 2) . "/ip_logs/";
@@ -33,12 +35,18 @@ class AttemptChecker { //Need to encrypt IP logs
         $new_entry = "\n" . $_SERVER["REMOTE_ADDR"] . " " . $email . " " . time();
         if (!file_exists($today_file)){
             file_put_contents($today_file, $new_entry);
+            $contents = file_get_contents($today_file);
+            file_put_contents($today_file, FileEncrypter::encrypt($contents));
         } else {
             $existing = file_get_contents($today_file);
+            $existing = FileEncrypter::decrypt($existing);
             $file = fopen($today_file, "r+");
             fwrite($file, $new_entry);
             fwrite($file, $existing);
             fclose($file);
+            //Then encrypt:
+            $contents = file_get_contents($today_file);
+            file_put_contents($today_file, FileEncrypter::encrypt($contents));
         }
     }
     public function maxMailsReached(){
