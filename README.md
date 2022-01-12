@@ -26,3 +26,5 @@ The contact form also allows you to crash the user's browser/tab by entering the
 In addition, the form can be configured with optional limits on how many messages an IP address can send per day, how many verifications can be sent to an email address per day, what the cool-off period should be before a user can send another verification code, and so on, to further prevent online harassment.
 
 The form is in its early stages and is not finished. I may never finish it, hence why I'm uploading the code here. A future version of the script will include a fancy, drag-and-drop form builder designed using Bootstrap, something which is already 90% done.
+
+Each email and verification code sent is logged in encrypted text files, organized by day. The master key for this encryption will eventually be stored outside the document root, preventing malicious users from discovering it.
