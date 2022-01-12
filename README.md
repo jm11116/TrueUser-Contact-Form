@@ -1,6 +1,6 @@
 # TrueUser Contact Form (Unfinished)
  
-Have you ever wanted a contact form that would tell you everything (within the bounds of the law) you could possibly know about the person sending the message? Have you also ever wanted to screw with abusive users? If so, TrueUser Contact Form might be for you! By integrating this piece of software into your website, you will be able to get the following information about the person who is sending messages through your contact form:
+Have you ever wanted a contact form that would tell you everything (within the bounds of the law) you could possibly know about the person sending the message? Have you also ever wanted to screw with abusive users? Do you think implementing input sanitization and then calling it a day is so 90s? If so, TrueUser Contact Form might be for you! By integrating this piece of software into your website, you will be able to get the following information about the person who is sending messages through your contact form:
 
 1. Their IP address, along with a link to get more information about that IP address from Scamalytics, a database that can tell you if an IP is legit or is a fraudulent VPN/VPS connection.
 3. The time from the visitor's PC system clock along with its set timezone. If a user's IP is located in Spain but their system clock is showing them coming from Australia, you'll know something's up.
