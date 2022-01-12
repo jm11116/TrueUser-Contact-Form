@@ -1,0 +1,4 @@
+Type: "input"
+Label: "Name:"
+Name: "name"
+Required: "true"

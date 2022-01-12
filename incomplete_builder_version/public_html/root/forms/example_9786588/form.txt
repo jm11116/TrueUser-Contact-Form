@@ -1,0 +1,13 @@
+Type: input
+Label: Name
+Name: input_33728456152491
+Required: true
+
+Type: email
+Label: Email
+Name: email
+Required: true
+
+Divider
+
+Heading: Form Options

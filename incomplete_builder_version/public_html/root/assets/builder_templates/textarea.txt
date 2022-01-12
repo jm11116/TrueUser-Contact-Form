@@ -1,0 +1,4 @@
+Type: "textarea"
+Label: "Message:"
+Name: "name"
+Required: "true"

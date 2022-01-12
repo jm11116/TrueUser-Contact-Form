@@ -1,0 +1,4 @@
+Type: email
+Label: Email
+Name: email
+Required: true

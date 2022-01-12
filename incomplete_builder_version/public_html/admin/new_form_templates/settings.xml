@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <settings>
+    <active>false</active>
+    <to_email>template@template.com</to_email>
+    <domain>website.com</domain>
+    <form_title>TrueUser Contact Form</form_title>
+    <form_intro_text>Please fill out the following form to make an enquiry. We will get back to you within 48 hours!</form_intro_text>
+    <company>Example Company</company>
+    <non_western_country_ban>off</non_western_country_ban>
+    <tracker_test>on</tracker_test>
+    <bad_ips></bad_ips>
+    <ips_to_crash></ips_to_crash>
+    <max_mails_per_day>3</max_mails_per_day>
+    <max_codes_per_day>7</max_codes_per_day>
+    <attempts_until_timeout>3</attempts_until_timeout>
+    <code_timeout_secs>20</code_timeout_secs>
+    <code_expiry_mins>5</code_expiry_mins>
+    <form_reset_time_hours>6</form_reset_time_hours>
+  </settings>

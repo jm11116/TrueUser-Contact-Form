@@ -1,0 +1,31 @@
+To: twilightsuspension@gmail.com
+Subject: New message from website.com
+Message: Name: Test
+Email: test@test.com
+Message: Test
+Choices: Cunt
+Option1: 
+Option2: Checked
+Message2: Test
+
+User information: 
+IP address: ::1
+IP info: http://www.scamalytics.com/ip/::1
+Time from visitor's system clock: Wed Dec 15 2021 19:08:34 GMT+1100 (Australian Eastern Daylight Time)
+JavaScript tracking scripts: Enabled
+Mouse moved: true
+Pixels scrolled: 115
+Keys pressed: Testtest@test.comTestTest
+Visitor active time: 2.40 minutes
+Visitor's screen size: 1280px wide, 800px long
+Visitor's PC core count: 8
+User's screen color depth: 30
+User's screen pixel depth: 30
+Cookie value: P%#gk@vBl8159CncO*ib!pUz#N9@y791!2TNb1N#48xKhzvOms*v!1!
+Verification attempts from IP today: 16
+User agent string: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.58 Safari/537.36
+Headers: From: "New message from website.com" <mailer@twilightsuspension@gmail.com>
+Reply-To: "Test" <test@test.com>
+X-Mailer: PHP/7.3.11
+MIME-Version: 1.0
+Content-type: text/html; charset=iso-8859-1

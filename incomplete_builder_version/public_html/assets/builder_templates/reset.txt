@@ -1,0 +1,14 @@
+Type: "input"
+Label: "Name:"
+Name: "name"
+Required: "true"
+
+Type: "email"
+Label: "Email:"
+Name: "email"
+Required: "true"
+
+Type: "textarea"
+Label: "Message:"
+Name: "name"
+Required: "true"
