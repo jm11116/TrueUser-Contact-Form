@@ -1,5 +1,6 @@
 class Settings {
     constructor(){
+        this.xml;
         this.settings_xml;
         this.website;
         this.tracker_test;

@@ -5,7 +5,7 @@ require_once "file_encrypter.php";
 class UserChecker {
     public function __construct(){
         $this->fake_code_loc = dirname(__DIR__, 1) . "/txt/fake_code.txt";
-        $this->settings_loc = dirname(__DIR__, 2) . "/settings.xml";
+        $this->settings_loc = dirname(__DIR__, 2) . "/settings114332554123345jk.xml";
         $this->settings = simplexml_load_file($this->settings_loc);
         $this->malicious_ips = [];
         $this->getMaliciousIPs();

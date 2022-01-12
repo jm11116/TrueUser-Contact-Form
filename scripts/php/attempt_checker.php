@@ -5,7 +5,7 @@ require_once "file_encrypter.php";
 class AttemptChecker { //Need to encrypt IP logs
     public function __construct(){
         $this->log_folder = dirname(__DIR__, 2) . "/ip_logs/";
-        $this->settings_loc = dirname(__DIR__, 2) . "/settings.xml";
+        $this->settings_loc = dirname(__DIR__, 2) . "/settings114332554123345jk.xml";
         $this->settings = /*FileEncrypter::decrypt(*/file_get_contents($this->settings_loc)/*)*/;
         $this->settings = simplexml_load_string($this->settings);
     }

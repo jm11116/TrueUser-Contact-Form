@@ -14,7 +14,7 @@ class Verifier {
     public function __construct(){
         session_start();
         $_SESSION["form_data"];
-        $this->settings_loc = dirname(__DIR__, 2) . "/settings.xml";
+        $this->settings_loc = dirname(__DIR__, 2) . "/settings114332554123345jk.xml";
         $this->settings = file_get_contents($this->settings_loc);
         $this->settings = simplexml_load_string($this->settings);
         $this->to_email = htmlspecialchars($this->settings->to_email);
