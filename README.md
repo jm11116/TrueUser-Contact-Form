@@ -8,7 +8,7 @@ Have you ever wanted a contact form that would tell you everything (within the b
 5. The visitor's screen height and width in pixels. If a user is supposedly coming from IP addresses and countries all over the world but every single one of those users seems to have the exact same device screen size, you might be able to use that information to connect abusive users.
 6. If a sender moved their device's mouse before sending their message, something which can tell you if a user is real or if they're a bot (reported as a Boolean).
 7. If a user has scrolled the page, along with how many times they have done so, something which can help you separate real users from bots if their device uses a touchscreen.
-8. The keyboard keys a user pressed before sending their message, allowing you to see if their message was copy-and-pasted or if it was composed by hand (soon will include modifier keys like control, alt, etc).
+8. The keyboard keys a user pressed before sending their message, allowing you to see if their message was copy-and-pasted or if it was composed by hand (soon will include modifier keys like control, alt, etc, and yes this is a keylogger).
 9. How long a user was active on the page before they sent their message, revealing whether or not a bot sent the message in a millisecond or if someone actually spent time writing it out.
 10. The number of CPU cores on the user's computer – a data-point which can be used to connect multiple visitors reporting different IPs.
 12. The color and pixel depth of the user's computer – another data-point which can be used to connect multiple visitors reporting different IP addresses.
