@@ -31,4 +31,4 @@ Each email and verification code sent is logged in encrypted text files, organiz
 
 # Screenshots of Incomplete Builder Version
 
-![image](https://github.com/jm11116/TrueUser-Contact-Form/blob/main/screenshots/Screen%20Shot%202022-01-12%20at%204.10.53%20PM.png)
+<img src="https://github.com/jm11116/TrueUser-Contact-Form/blob/main/screenshots/Screen%20Shot%202022-01-12%20at%204.10.53%20PM.png" width="50%">
