@@ -29,7 +29,7 @@ In addition, the form can be configured with optional limits on how many message
 
 Each email and verification code sent is logged in encrypted text files, organized by day. The master key for this encryption will eventually be stored outside the document root, preventing malicious users from discovering it.
 
-The form is in its early stages and is not finished. I may never finish it, hence why I'm uploading the code here. A future version of the script will include a fancy, drag-and-drop form builder designed using Bootstrap, something which is already 90% done. The builder will allow simple creation of multiple secure forms.
+The form is in its early stages and is not finished. I may never finish it, hence why I'm uploading the code here. A future version of the script will include a fancy, drag-and-drop form builder designed using Bootstrap, something which is already 90% done. I'd finish it now but I'd have to write a login system and it'd be a whole thing. The builder will allow simple creation of multiple secure forms.
 
 # Screenshots of Incomplete Builder Version
 
