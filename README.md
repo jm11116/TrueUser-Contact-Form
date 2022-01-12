@@ -31,8 +31,6 @@ Each email and verification code sent is logged in encrypted text files, organiz
 
 # Screenshots of Incomplete Builder Version
 
-<center>
-<img src="https://github.com/jm11116/TrueUser-Contact-Form/blob/main/screenshots/Screen%20Shot%202022-01-12%20at%204.10.53%20PM.png" width="70%">
-<img src="https://github.com/jm11116/TrueUser-Contact-Form/blob/main/screenshots/Screen%20Shot%202022-01-12%20at%204.11.34%20PM.png" width="70%">
-<img src="https://github.com/jm11116/TrueUser-Contact-Form/blob/main/screenshots/Screen%20Shot%202022-01-12%20at%204.18.23%20PM.png" width="70%">
-</center>
+<img src="https://github.com/jm11116/TrueUser-Contact-Form/blob/main/screenshots/Screen%20Shot%202022-01-12%20at%204.10.53%20PM.png" width="70%" align="center">
+<img src="https://github.com/jm11116/TrueUser-Contact-Form/blob/main/screenshots/Screen%20Shot%202022-01-12%20at%204.11.34%20PM.png" width="70%" align="center">
+<img src="https://github.com/jm11116/TrueUser-Contact-Form/blob/main/screenshots/Screen%20Shot%202022-01-12%20at%204.18.23%20PM.png" width="70%" align="center">
