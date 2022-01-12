@@ -11,8 +11,10 @@ Have you ever wanted a contact form that would tell you everything (within the b
 8. The keyboard keys a user pressed before sending their message, allowing you to see if their message was copy-and-pasted or if it was composed by hand (soon will include modifier keys like control, alt, etc).
 9. How long a user was active on the page before they sent their message, revealing whether or not a bot sent the message in a millisecond or if someone actually spent time writing it out.
 10. The number of CPU cores on the user's computer – a data-point which can be used to connect multiple visitors reporting different IPs.
-11. The color and pixel depth of the user's computer – another data-point which can be used to connect multiple visitors reporting different IP addresses.
-12. Whether or not a visitor has used the contact form before by setting a unique cookie disguised as a legitimate cookie on their computer, allowing you to connect users by cookie value, even if they're coming from different IPs.
+12. The color and pixel depth of the user's computer – another data-point which can be used to connect multiple visitors reporting different IP addresses.
+13. The visitor's user-agent string – basically useless as it can be trivially spoofed but can be useful for blocking purposes.
+14. How many verification codes the user requested before sending their message.
+15. Whether or not a visitor has used the contact form before by setting a unique cookie disguised as a legitimate cookie on their computer, allowing you to connect users by cookie value, even if they're coming from different IPs.
 
 The contact form also provides a number of other protections against abusive users, such as:
 1. Verifies that a user's email address is real by only allowing a message to be sent after the user inputs a code that is sent to their address.
