@@ -23,7 +23,7 @@ The contact form also provides a number of other protections against abusive use
 4. Prevents users without cookies enabled from using the form, deterring users who don't want to compromise their anonymity from sending messages.
 5. An option to prevent users with trackers disabled from using the form, deterring users who don't want to compromise their anonymity from sending messages.
 
-The contact form also allows you to crash the user's browser/tab by entering their IP address in the settings.xml file. It will output a whole bunch of scary-looking dummy code on the user's screen, and then will trigger an infinite JavaScript loop that will eventually exhaust the malicious user's system memory. The form will also include a Hall of Shame, where identified malicious users can be named and shamed for eternity by clicking the Hall of Shame link beneath the 'Submit' button.
+The contact form also allows you to crash the user's browser/tab by entering their IP address in the settings.xml file. It will output a whole bunch of scary-looking dummy code on the user's screen when it detects a rogue user, and then it will trigger an infinite JavaScript loop that will eventually exhaust the malicious user's system memory. The form will also include a Hall of Shame, where identified malicious users can be named and shamed for eternity by clicking the Hall of Shame link beneath the 'Submit' button.
 
 In addition, the form can be configured with optional limits on how many messages an IP address can send per day, how many verifications can be sent to an email address per day, what the cool-off period should be before a user can send another verification code, and so on, to further prevent online harassment.
 
